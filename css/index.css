@@ -1,0 +1,271 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			.container{
+				width: 100%;
+				background-color: #dad5cb;
+			}
+			.header{
+                width: 100%;
+                overflow: hidden;
+			}
+			.top{
+				background-color: #a6926c;
+				height: 40px;
+				width: 100%;
+            }
+            .top-left,.top-right{
+                padding:0 30px;
+                font-size: 14px;
+                line-height: 40px;
+                color: white;
+            }
+            .top-left{
+                float: left;
+            }
+            .top-right{
+                float: right;
+            }
+            .top-right span{
+                margin: 0 10px;
+            }
+            .banner{
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+            }
+            .banner-bg{
+                width: 100%;
+                height: 300px;
+                background: url(../image/fenliliuyanban1.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease-in-out 0s;
+                -webkit-transition: transform 0.5s ease-in-out 0s;
+                -moz-transition: transform 0.5s ease-in-out 0s;
+                -ms-transition: transform 0.5s ease-in-out 0s;
+                -o-transition: transform 0.5s ease-in-out 0s;
+                }
+            .banner-bg:hover{
+                transform: scale(1.2,1.2);
+                -webkit-transform: scale(1.2,1.2);
+                -moz-transform: scale(1.2,1.2);
+                -ms-transform: scale(1.2,1.2);
+                -o-transform: scale(1.2,1.2);
+                }
+            /*content开始*/
+            .content{
+                width: 60%;
+                position: relative;
+                box-sizing: border-box;
+                border: 2px solid #ffffff;
+            }
+            .content .content-left{
+                margin: 0 auto;
+                 width: 80%;       
+            }
+            .content .content-right{
+                position: absolute;
+                left: 100%;
+                top: 0;
+                width: 60%;
+                height: 400px;
+                background-color: #CCCCCC;
+            }
+            /*content-right开始*/
+            .content-right-content{
+                margin: 0 auto;
+            }
+            .content-right-content p{
+                height: 40px;
+            }
+            .content-right-content .heightauto{
+                height: auto;
+            }
+            
+            .content-right-content p input{
+                width: 200px;
+            }
+            .content-right-content p{
+                line-height: 40px;
+                padding: 0 20px;
+            }
+            .content-right-content p span:first-child{
+                width: 100px;
+                text-align: top;
+            }
+			.buttons{
+				text-align: center;
+			}
+			.buttons button{
+				width: 200px;
+			}
+			.content div.flexwindow{
+				position: fixed;
+				left: 60%;
+				width: 35.5%;
+				top: 0;
+				bottom: 0;
+			}
+            /*.content-left开始*/
+            .content-left{
+                background-color: #ffffff;
+                
+            }
+            .content-left ul{
+                list-style: none;
+                padding: 0 20px;
+                
+            }
+            .content-left li{
+                padding: 10px;
+                overflow: hidden;
+                border-bottom: 2px solid #f1d091;
+				cursor: pointer;
+				transition: transform 0.5s linear 0s,background-color 0.5s linear 0s; 
+            }
+			.content-left li:hover{
+				background-color: #CCCCCC;
+				transform: scale(1.2,1.2);
+			}
+            .content-left li>div{
+                float: left;
+            }
+            .content-left li>div:first-child{
+                padding-top: 10px;
+                width: 10%;
+            }
+			.lou{
+				padding: 0 5px;
+				color: orange;
+			}
+            .content-left li img{
+                width: 100%;
+            }
+            .content-left li>div:last-child{
+                margin: 0 4%;
+                width: 80%;
+            }
+            .content-left div p{
+                padding: 5px;
+                width: 100%;
+            }
+			/*页码*/
+            .content-left .page{
+				cursor: pointer;
+                padding: 10px 10%;
+            }
+            .content-left .page input{
+                width: 40px;
+            }
+			.content-left .page b{
+				cursor: pointer;
+			}
+            /*public样式*/
+            .aligncenter{
+                text-align: center;
+            }
+            .resize{
+                resize: none;
+            }
+            .vertical-center{
+                vertical-align: middle;
+            }
+            .font-size20px{
+                font-size: 20px;
+            }
+            .poninter{
+                cursor: pointer;
+            }
+			/*footer开始*/
+			.footer{
+				font: 12px/1.5em "microsoft sans serif";
+				color: #403e3b;
+			}
+			.footer p{
+				height: 18px;
+				text-align: center;
+			}
+			.footer a{
+				text-decoration: none;
+				color: #403e3b;
+			}
+			/*admin开始*/
+			div.admin{
+				display: none;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(88,88,88,0.8);
+			}
+			.admin .admin-content{
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin: -150px 0 0 -200px;
+				width: 400px;
+				height: 300px;
+				background-color: #FFFFFF;
+			}
+			.admin-content .admin-title{
+				margin-bottom: 20px;
+				width: 100%;
+				height: 50px;
+				background-color: #CCCCCC;
+				text-align: center;
+				font: 20px/50px "microsoft sans serif";
+				color: #FFFFFF;
+				position: relative;
+			}
+			.admin-title span{
+				cursor: pointer;
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 50px;
+				height: 20px;
+				font: 12px/20px "microsoft sans serif";
+				transition: font 0.5s linear 0s,background-color 0.5s linear 0s; 
+			}
+			.admin-title span:hover{
+				font: 14px/20px "microsoft sans serif";
+				background-color: red;
+			}
+			.admin-content p{
+				width: 100%;
+				height: 40px;
+				line-height: 40px;
+			}
+			.admin-content p span{
+				display: inline-block;
+				width: 100px;
+				text-align: right;
+			}
+			.admin-content p button{
+				margin: 30px 0 0 0;
+				width: 150px;
+				height: 30px;
+			}
+			.content-left #adminguanli{
+				text-align: right;
+			}
+			.content-left #adminguanli span{
+				color: coral;
+				font: 12px/30px "microsoft sans serif";
+				cursor: pointer;
+				margin: 0px 10px;
+			}
+			p#adminhuifu{
+				display: none;
+			}
+			p#adminhuifu span{
+				vertical-align: top;
+			}
+			p#adminhuifu textarea{
+				resize: none;
+				overflow: auto;
+			}
